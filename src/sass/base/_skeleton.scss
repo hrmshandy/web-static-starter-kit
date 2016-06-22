@@ -1,0 +1,59 @@
+/*
+Name: 			F
+Written by: 	Sandi Hermawan - (http://www.sandihermawan.link)
+Version: 		@@version
+*/
+
+html,
+body {
+	background: $body-color;
+	width: 100%;
+}
+
+html {
+	font-size: $root-font-size + 0px;
+}
+
+body {
+	color: #222;
+	font-family: $font-primary;
+	margin: 0;
+	font-size: $body-font-size + 0px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	letter-spacing: 0.01em;
+	font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+}
+
+a {
+	color: $color-primary;
+}
+
+a:hover, a:focus {
+	color: lighten($color-primary, 5%);
+	text-decoration: none;
+	outline: none;
+}
+
+a:active {
+	color: darken($color-primary, 5%);
+}
+
+// LAYOUT STYLE
+// -----------------------------------------------------------------------------
+
+/* Layout Base - Main Wrapper  */
+.body {
+	min-height: 100vh;
+	width: 100%;
+}
+
+// MAIN CONTENT
+// -----------------------------------------------------------------------------
+
+/* Layout Base - Content Body */

@@ -1,0 +1,23 @@
+.form-control {
+	&:focus {
+		outline: none;
+		box-shadow: none;
+		border-color: $color-primary;
+		background-color: $color-default;
+	}
+}
+
+.form-group {
+	&.has-error {
+		label, .help-block {
+			color: $color-danger;
+		}
+		.form-control {
+			border-color: $color-danger;
+			&:focus {
+				outline: none;
+				box-shadow: none;
+			}
+		}
+	}
+}

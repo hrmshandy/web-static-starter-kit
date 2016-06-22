@@ -1,0 +1,33 @@
+// VENDORS
+// -----------------------------------------------------------------------------
+@import "vendors/gridlex/gridlex";
+
+// COMMON IMPORTS
+// -----------------------------------------------------------------------------
+@import "config/imports";
+@import "mixins/imports";
+
+// BASIC
+// -----------------------------------------------------------------------------
+@import "base/fonts";
+@import "base/skeleton";
+@import "base/header";
+@import "base/menu";
+@import "base/footer";
+
+// GUI
+// -----------------------------------------------------------------------------
+@import "ui/preloader";
+@import "ui/buttons";
+@import "ui/forms";
+@import "ui/social-icons";
+@import "ui/slider";
+
+// MODULES
+// -----------------------------------------------------------------------------
+@import "modules/parallax/parallax";
+@import "modules/editor/editor";
+
+// PAGES
+// -----------------------------------------------------------------------------
+@import "modules/pages/home";

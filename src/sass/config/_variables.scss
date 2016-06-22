@@ -1,0 +1,156 @@
+// =============================================================================
+// VENDOR OVERIDE
+// =============================================================================
+
+
+// =============================================================================
+// TYPOGRAPHY
+// =============================================================================
+$font-primary: "Lato", sans-serif;
+$font-secondary: "Lustria", serif;
+// $font-tertiary: "Lovelo", sans-serif;
+
+$root-font-size: 10;
+$body-font-size: 13;
+
+
+// =============================================================================
+// COLORS
+// =============================================================================
+$color-default: #F5F9FC;
+$color-default-inverse: #003c8f;
+
+$color-muted: #999;
+
+$color-primary: #104ba0;
+$color-primary-inverse: #FFF;
+
+$color-success: #47a447;
+$color-success-inverse: #FFF;
+
+$color-warning: #ed9c28;
+$color-warning-inverse: #FFF;
+
+$color-danger: #ec5c56;
+$color-danger-inverse: #FFF;
+
+$color-info: #5bc0de;
+$color-info-inverse: #FFF;
+
+$color-secondary: #fbad40;
+$color-secondary-inverse: #FFF;
+
+$color-tertiary: #2BAAB1;
+$color-tertiary-inverse: #FFF;
+
+$color-quartenary: #734BA9;
+$color-quartenary-inverse: #FFF;
+
+$color-dark: #171717;
+$color-dark-inverse: #FFF;
+
+$body-color: #fff;
+$sidebar-color: #33363F;
+
+$color-black: #333;
+
+// colors list
+$colors-list:
+    (primary $color-primary $color-primary-inverse)
+    (primary $color-primary $color-primary-inverse)
+    (secondary $color-secondary $color-secondary-inverse)
+    (tertiary $color-tertiary $color-tertiary-inverse)
+    (quartenary $color-quartenary $color-quartenary-inverse)
+    (success $color-success $color-success-inverse)
+    (warning $color-warning $color-warning-inverse)
+    (danger $color-danger $color-danger-inverse)
+    (info $color-info $color-info-inverse)
+    (dark $color-dark $color-dark-inverse);
+
+// states list
+$states:
+    (default $color-default $color-default-inverse $color-primary)
+    (primary $color-primary $color-primary-inverse $color-secondary)
+    (success $color-success $color-success-inverse darken($color-success, 5%))
+    (warning $color-warning $color-warning-inverse darken($color-warning, 5%))
+    (danger $color-danger $color-danger-inverse darken($color-danger, 5%))
+    (info $color-info $color-info-inverse darken($color-info, 5%))
+    (dark $color-dark $color-dark-inverse darken($color-dark, 5%));
+
+// Dark Version,
+$dark-bg: #1d2127;
+$dark-default-text: #808697;
+
+$dark-color-1: $dark-bg;
+$dark-color-2: lighten($dark-color-1, 2%);
+$dark-color-3: lighten($dark-color-1, 5%);
+$dark-color-4: lighten($dark-color-1, 8%);
+$dark-color-5: lighten($dark-color-1, 3%);
+
+$darken-color-1: darken($dark-color-1, 2%);
+
+// social media colors
+$color-vimeo: #4dbfe3;
+$color-twitter: #32b9e7;
+$color-facebook: #4b70ab;
+$color-googleplus: #fa5432;
+$color-youtube: #fa5432;
+$color-pintrest: #d63533;
+$color-linkedin: #0087be;
+$color-dribble: #fc89b1;
+$color-instagram: #6291b2;
+$color-dropbox: #167ab6;
+$color-soundcloud: #fb740b;
+$color-behance: #33abdb;
+$color-skype: #00AFF0;
+$color-github: #333333;
+$color-flickr: #333333;
+$color-rss: #FB7629;
+$color-email: #444444;
+$color-whatsapp: #4DC247;
+
+// =============================================================================
+// HEADER
+// =============================================================================
+// sizes
+$header-height: 175px;
+$header-side-width: 155px;
+$header-logo-width: 250px;
+
+// =============================================================================
+// SIDEBAR
+// =============================================================================
+// sizes
+$sidebar-width: 250px;
+$sidebar-gutter: 30px;
+
+// =============================================================================
+// CONTENT BODY
+// =============================================================================
+$content-body-padding: 40px;
+
+// =============================================================================
+// SOCIAL ICONS
+// =============================================================================
+// List of icon unicode symbols from the icon font
+// and background colours for the icons
+$icon-list: (
+    //vimeo "\f27d" $color-vimeo,
+    twitter "\f099" $color-twitter,
+    facebook "\f09a" $color-facebook,
+    //googleplus "\f0d5" $color-googleplus,
+    youtube "\f167" $color-youtube,
+    //pintrest "\f231" $color-pintrest,
+    //linkedin "\f0e1" $color-linkedin,
+    //dribble "\f17d" $color-dribble,
+    //instagram "\f16d" $color-instagram,
+    //dropbox "\f16b" $color-dropbox,
+    //soundcloud "\f1be" $color-soundcloud,
+    //behance "\f1b4" $color-behance,
+    //skype "\f17e" $color-skype,
+    //github "\f09b" $color-github,
+    //flickr "\f16e" $color-flickr,
+    //rss "\f09e" $color-rss,
+    //email "\f003" $color-email,
+    //whatsapp "\f232" $color-whatsapp
+);

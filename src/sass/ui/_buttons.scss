@@ -1,0 +1,50 @@
+// BUTTON
+// -----------------------------------------------------------------------------
+/* Button Basic */
+.btn {
+	// text-transform: uppercase;
+	font-weight: bold;
+	border-radius: 0;
+	font-weight: 300;
+	padding: 6px 25px;
+	&:focus,
+	&:active:focus,
+	&.active:focus {
+		outline: none;
+	}
+	i {
+		margin-left: 10px;
+	}
+}
+
+@each $state in $states {
+	.btn-#{nth($state,1)} {
+		background-color: #{nth($state,2)};
+		border-color: #{nth($state,2)};
+		color: #{nth($state,3)};
+
+		&:hover {
+			border-color: #{nth($state,4)};
+			background-color: #{nth($state,4)};
+			color: #{nth($state,3)};
+		}
+
+		&:active,
+		&:active:hover,
+		&.active:hover,
+		&:focus {
+			border-color: darken(nth($state,4), 5%);
+			background-color: darken(nth($state,4), 5%);
+			color: #{nth($state,3)};
+		}
+
+		&.dropdown-toggle {
+			border-left-color: darken(nth($state,2), 5%);
+		}
+
+		&[disabled] {
+			border-color: lighten(nth($state,2), 20%);
+			background-color: lighten(nth($state,2), 20%);
+		}
+	}
+}
